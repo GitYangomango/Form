@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="theme.css">	
+		<div id="titolo">Ciao, questo form è stato scritto da Yang Xiang, classe 4G<br></div>
+		<div id="titolo2">Inserisci i dati</div>
+		<title>
+			Yang Xiang: Form
+		</title>
+	</head>
+	
+<body>
+	<table>
+		
+		<form method="post" name="modulo">
+		
+		<tr>
+			<td>Cognome</td>
+			<td><input type="text" maxlength="50" name="cognome" id='cognome' onkeyup="cognomecheck()">
+			<br>
+			<div id='cognomecheck'></div>
+			</td>
+		</tr>
+		<tr>
+			<td>Nome</td>
+			<td><input type="text" maxlength="50" name="nome" id='nome' onkeyup="nomecheck()">
+			<br>
+			<div id='nomecheck'></div>
+			</td>
+		</tr>
+		<tr>		
+			<td>Sesso</td>
+			<td><input type="radio" id="Femmina" name="Sesso" value="Femmina">Femmina 
+			<br>
+			<input type="radio" id="Maschio" name="Sesso" value="Maschio">Maschio</td>
+		</tr>
+		<tr>
+			<td>Ateneo</td>
+			<td><select name="ateneo">
+				<option value=""></option>
+				<option value="La Sapienza">La Sapienza</option>
+				<option value="Tor Vergata">Tor Vergata</option>
+				<option value="Roma Tre">Roma Tre</option>
+			</select>	
+		</tr>
+		<tr>
+			<td>CAP</td>
+			<td><input type="text" maxlength="5" name="CAP" id='cap' onkeyup="capcheck()">
+			<br>
+			<div id='capcheck'></div></td>
+		</tr>
+		<tr>
+			<td>Studente lavoratore</td>
+			<td><input type="radio" name="SL" value="Sì" id='lavcheck'>Sì
+			<br>
+			<input type="radio" name="SL" value="No">No</td>
+		</tr>
+		<tr>
+			<td>Descrizione del lavoro svolto</td>
+			<td><input type="text" maxlength="80" id='desc'></td>
+		</tr>
+		<tr>
+			<td>Matricola</td>
+			<td><input type="text" maxlength="12" name="matricola"><br></td>
+		</tr>
+		<tr>
+			<td>Regione di residenza</td>
+			<td><select name="regione">
+				<option value=""></option>
+				<option value="Lombardia">Lombardia</option>
+				<option value="Campania">Campania</option>
+				<option value="Lazio">Lazio</option>
+				<option value="Sicilia">Sicilia</option>
+				<option value="Veneto">Veneto</option>
+				<option value="Piemonte">Piemonte</option>
+				<option value="Emilia-Romagna">Emilia-Romagna</option>
+				<option value="Puglia">Puglia</option>
+				<option value="Toscana">Toscana</option>
+				<option value="Calabria">Calabria</option>
+				<option value="Sardegna">Sardegna</option>
+				<option value="Liguria">Liguria</option>
+				<option value="Marche">Marche</option>
+				<option value="Abruzzo">Abruzzo</option>
+				<option value="Friuli-Venezia Giulia">Friuli-Venezia Giulia</option>
+				<option value="Trentino-Alto Adige">Trentino-Alto Adige</option>
+				<option value="Umbria">Umbria</option>
+				<option value="Basilicata">Basilicata</option>
+				<option value="Molise">Molise</option>
+				<option value="Valle d'Aosta">Valle d'Aosta</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="text" maxlength="30" name="email"><br></td>
+		</tr>
+		<tr>
+			<td>Telefono</td>
+			<td><input type="text" maxlength="15" name="telefono"><br></td>
+		</tr>
+		<tr>
+			<td>Richieste particolari</td>
+			<td><textarea name="richieste" cols="60" rows="12"></textarea></td>
+		</tr>						
+		<tr>
+			<script src="script.js"></script>
+			<td><input type="button" value="Invia Dati" onClick="Modulo()">
+			<input type="reset" value="Azzera"></td>
+		</tr>						
+		</form>
+	</table>
+</body>
+</html>
